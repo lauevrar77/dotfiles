@@ -87,6 +87,16 @@
   programs.tmux = {
       enable = true;
       clock24 = true;
+      plugins = with pkgs.tmuxPlugins; [
+		{
+			plugin = dracula;
+			extraConfig = ''
+				set -g @dracula-show-battery false
+				set -g @dracula-refresh-rate 10
+			'';
+		}
+	];
+
   };
 
 
@@ -101,7 +111,6 @@
     pkgs.starship
     pkgs.zoxide
     pkgs.exa
-    pkgs.tmux
     pkgs.rsync
     pkgs.jq
     pkgs.kubectl
