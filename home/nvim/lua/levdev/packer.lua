@@ -22,6 +22,14 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- File explorer
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+  }
+
   -- LSP and autocomplete
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'neovim/nvim-lspconfig'
