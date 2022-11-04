@@ -30,6 +30,9 @@ return require('packer').startup(function(use)
     },
   }
 
+  -- Terminal
+  use 'akinsho/toggleterm.nvim'
+
   -- LSP and autocomplete
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'neovim/nvim-lspconfig'
