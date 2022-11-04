@@ -12,3 +12,8 @@ nnoremap("<leader>fh","<cmd>Telescope help_tags<cr>")
 
 -- File explorer
 nnoremap("<leader>ee", "<cmd>NvimTreeToggle<cr>")
+
+nnoremap("<c-k>", "<cmd>wincmd k<CR>")
+nnoremap("<c-j>", "<cmd>wincmd j<CR>")
+nnoremap("<c-h>", "<cmd>wincmd h<CR>")
+nnoremap("<c-l>", "<cmd>wincmd l<CR>")
