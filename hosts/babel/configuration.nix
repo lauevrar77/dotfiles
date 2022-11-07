@@ -5,6 +5,7 @@
   ];
 
   system.stateVersion = "22.11";
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Install some packages
     environment.systemPackages = 
@@ -20,12 +21,13 @@
     isNormalUser  = true;
     home  = "/home/laurent";
     description  = "Laurent Evrard";
-    extraGroups  = [ "wheel" ];
+    extraGroups  = [ "wheel" "docker" ];
     shell = pkgs.zsh;
     openssh.authorizedKeys.keys  = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBVEwVqhmgtNWE6HwI2ZtsAfp4esjUur6AlWq4mzcH4o laurent@ipad" "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDWJZ2YHSY7YtzCgpYRya/lIa0duzyfyhDybiUFgkoeP laurent@Laurents-MacBook-Pro.local" ];
   };
 
   services.tailscale.enable = true;
+  virtualisation.docker.enable = true;
 
   systemd.services.tailscale-autoconnect = {
     description = "Automatic connection to Tailscale";
