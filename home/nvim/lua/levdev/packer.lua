@@ -6,6 +6,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Styling
   use 'Mofiqul/dracula.nvim'
+  use 'folke/tokyonight.nvim'
   use 'nvim-lualine/lualine.nvim'
   use {
     'nvim-lualine/lualine.nvim',
