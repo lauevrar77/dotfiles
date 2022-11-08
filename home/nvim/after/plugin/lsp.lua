@@ -100,3 +100,5 @@ cmp.setup {
     { name = 'luasnip' },
   },
 }
+
+require("nvim-autopairs").setup({})
