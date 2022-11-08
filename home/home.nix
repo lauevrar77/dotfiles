@@ -88,6 +88,9 @@
       enable = true;
       clock24 = true;
       plugins = [
+        {
+            plugin = pkgs.tmuxPlugins.sensible;
+        }
 		{
 			plugin = pkgs.tmuxPlugins.mkTmuxPlugin {
                 pluginName = "tokyonight";
@@ -101,6 +104,12 @@
             };
 		}
 	];
+    extraConfig = ''
+      set -g default-terminal 'screen-256color'
+      set -g base-index 1
+      set-window-option -g pane-base-index 1
+      set-option -g status-style fg=yellow,bg=black
+    '';
 
   };
 
