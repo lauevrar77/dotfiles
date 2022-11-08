@@ -120,6 +120,7 @@
     pkgs.ffmpeg
     pkgs.ripgrep
     pkgs.fd
+    pkgs.gcc
    ];
 
 }
