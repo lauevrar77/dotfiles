@@ -87,13 +87,18 @@
   programs.tmux = {
       enable = true;
       clock24 = true;
-      plugins = with pkgs.tmuxPlugins; [
+      plugins = [
 		{
-			plugin = dracula;
-			extraConfig = ''
-				set -g @dracula-show-battery false
-				set -g @dracula-refresh-rate 10
-			'';
+			plugin = pkgs.tmuxPlugins.mkTmuxPlugin {
+                pluginName = "tokyonight";
+                version = "0.1.1";
+                src = pkgs.fetchFromGitHub {
+                  owner = "janoamaral";
+                  repo = "tokyo-night-tmux";
+                  rev = "5c91632";
+                  sha256 = "1bhdzsx3kdjqjmm1q4j8937lrpkzf71irr3fqhdbddsghwrrmwim";
+                };
+            };
 		}
 	];
 
