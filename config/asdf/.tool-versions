@@ -1,0 +1,5 @@
+neovim 0.11.2
+postgres 15.6
+golang 1.24.4
+ruby 3.3.8
+nodejs 23.11.0
