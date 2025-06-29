@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd ~/.dotfiles/config
+for conf in $(ls) 
+do
+  echo Stowidy $conf
+  stow -t $HOME $conf
+done
