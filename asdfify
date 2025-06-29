@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for plugin in $(cat ~/.tool-versions|cut -d" " -f1)
+do
+	echo Installing asdf plugin $plugin
+	asdf plugin add $plugin
+done
+
+cd ~
+asdf install
