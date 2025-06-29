@@ -1,0 +1,30 @@
+# import = ["/Users/laurent/.config/alacritty/gruvbox.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+
+[font.bold_italic]
+family = "Hack Nerd Font Mono"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+
+[font.normal]
+family = "FiraCode Nerd Font"
+
+[window]
+# decorations = "Buttonless"
+# opacity = 0.88
+# blur = true
+
+[window.padding]
+x = 3
+y = 3
+
+
