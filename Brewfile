@@ -51,6 +51,8 @@ cask "notion"
 cask "font-hack-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "basictex"
+cask "docker"
+cask "dash"
 
 # MAS
 mas "Numbers", id: 409203825
