@@ -17,6 +17,7 @@ brew "pandoc"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "nushell"
+brew "git-filter-repo"
 
 # YW
 brew "imagemagick"
