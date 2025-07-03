@@ -17,6 +17,8 @@ brew "pandoc"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 brew "nushell"
+brew "git-filter-repo"
+brew "fabric-ai"
 
 # YW
 brew "imagemagick"
@@ -51,6 +53,8 @@ cask "notion"
 cask "font-hack-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "basictex"
+cask "docker"
+cask "dash"
 
 # MAS
 mas "Numbers", id: 409203825
