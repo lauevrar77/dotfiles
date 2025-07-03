@@ -55,6 +55,7 @@ cask "font-fira-code-nerd-font"
 cask "basictex"
 cask "docker"
 cask "dash"
+cask "messenger"
 
 # MAS
 mas "Numbers", id: 409203825
