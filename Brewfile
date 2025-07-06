@@ -19,6 +19,7 @@ brew "zsh-syntax-highlighting"
 brew "nushell"
 brew "git-filter-repo"
 brew "fabric-ai"
+brew "httpie"
 
 # YW
 brew "imagemagick"
