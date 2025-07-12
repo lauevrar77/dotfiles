@@ -36,6 +36,21 @@ brew "icu4c"
 brew "pkg-config"
 brew "openssl"
 
+# Mail
+brew "neomutt"
+brew "isync"
+brew "msmtp"
+brew "pass"
+brew "ca-certificates"
+brew "gettext"
+brew "lynx"
+brew "notmuch"
+brew "abook"
+brew "urlview"
+
+# News
+brew "newsboat"
+
 
 cask "slack"
 cask "1password"
@@ -57,6 +72,7 @@ cask "basictex"
 cask "docker"
 cask "dash"
 cask "messenger"
+cask "tailscale"
 
 # MAS
 mas "Numbers", id: 409203825
